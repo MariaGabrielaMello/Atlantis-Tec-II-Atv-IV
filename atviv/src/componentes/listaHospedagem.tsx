@@ -10,6 +10,7 @@ type ClienteData = {
     telefone?: string;
     checkin?: string;
     checkout?: string;
+    acomodacao?: string;
     quarto?: string;
 }
 
@@ -42,7 +43,7 @@ export default class ListaHospedagem extends Component<props, state> {
     }
 
     selectCliente = (cliente: string) => {
-        const clienteData = { nome: cliente, nomeSocial: "", email: "", ddd: "", telefone: "", checkin: "", checkout: "", quarto: "" };
+        const clienteData = { nome: cliente, nomeSocial: "", email: "", ddd: "", telefone: "", checkin: "", checkout: "", acomodacao: "", quarto: "" };
         this.setState({ selectedCliente: cliente, clienteData, showModal: true });
     };
 
@@ -163,6 +164,19 @@ export default class ListaHospedagem extends Component<props, state> {
                                     aria-describedby="basic-addon1"
                                     name="Check-out"
                                     value={clienteData?.checkout || ""}
+                                    onChange={this.handleChange}
+                                    disabled={!isEditing}
+                                />
+                            </div>
+                            <div className="input-group mb-3">
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    placeholder="Acomodação"
+                                    aria-label="Acomodação"
+                                    aria-describedby="basic-addon1"
+                                    name="Acomodação"
+                                    value={clienteData?.acomodacao || ""}
                                     onChange={this.handleChange}
                                     disabled={!isEditing}
                                 />
