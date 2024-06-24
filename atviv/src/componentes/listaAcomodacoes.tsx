@@ -15,8 +15,8 @@ const acomodacoesTeste: AcomodacaoData[] = [
     { id: 2, nome: "Solteiro Mais", CamaSolteiro: 0, CamaCasal: 1, Suite: 1, Climatizacao: true, Garagem: 1 },
     { id: 3, nome: "Casal Simples", CamaSolteiro: 0, CamaCasal: 1, Suite: 1, Climatizacao: true, Garagem: 1 },
     { id: 4, nome: "Familia Simples", CamaSolteiro: 2, CamaCasal: 1, Suite: 1, Climatizacao: true, Garagem: 1 },
-    { id: 5, nome: "Familia Mais", CamaSolteiro: 5, CamaCasal: 1, Suite: 2, Climatizacao: true, Garagem: 2 },
-    { id: 6, nome: "Solteiro Mais", CamaSolteiro: 6, CamaCasal: 2, Suite: 3, Climatizacao: true, Garagem: 2 },
+    { id: 5, nome: "Família Mais", CamaSolteiro: 5, CamaCasal: 1, Suite: 2, Climatizacao: true, Garagem: 2 },
+    { id: 6, nome: "Família Super", CamaSolteiro: 6, CamaCasal: 2, Suite: 3, Climatizacao: true, Garagem: 2 },
 ];
 
 interface State {
